@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- <%=BASE_URL%>表示当前文件路径   ./   -->
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?1pp6co');
+            src: url('fonts/icomoon.eot?1pp6co#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?1pp6co') format('truetype'), url('fonts/icomoon.woff?1pp6co') format('woff'), url('fonts/icomoon.svg?1pp6co#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>

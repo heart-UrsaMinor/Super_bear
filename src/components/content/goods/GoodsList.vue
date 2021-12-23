@@ -17,6 +17,13 @@ export default {
        }
    },
    components: { GoodsListItem },
+   created() {
+        this.goods.sort(()=>{
+            return (0.5-Math.random())
+        })
+   },
+   
+   
 }
 </script>
 <style  scoped>

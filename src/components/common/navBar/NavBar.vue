@@ -8,9 +8,9 @@
 </template>
 
 <script>
-export default {
+export default ({
     name:"NavBar"
-}
+})
 </script>
 
 <style  scoped>
@@ -19,7 +19,8 @@ export default {
         line-height: 44px;
         /* 注意一个细节line-height需要添加内容否则无法撑开高度 */
         height: 44px;
-         background-color: gainsboro;
+        width: 100%;
+        background-color: gainsboro;
     }
     .left,.right{
        width: 60px;

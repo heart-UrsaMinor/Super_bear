@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <main-tab-bar/>
+    <keep-alive exclude="Details"><router-view></router-view></keep-alive>
+    <main-tab-bar v-if="$route.meta.showTab"/>
   </div>
 </template>
 <script>
  import MainTabBar from "./components/content/MainTabBar.vue"
 export default({
   name:"App",
+  data() {
+    return {
+      footShow: true,
+    };
+  },
   components:{
     MainTabBar
   }
